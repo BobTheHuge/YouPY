@@ -32,6 +32,11 @@ Given version are the only one tested for now, the software way work or not with
  
 -FFmpeg Plugin v**5.0.1**
   [FFmpeg Download Page](https://ffmpeg.org/download.html)
+  
+  or using chocolatey (What i used for my windows as i don't understand the file architecture :sweat_smile:):
+  ```
+  choco install ffmpeg
+  ```
 
 ### Python Modules :
 
