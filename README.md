@@ -1,7 +1,7 @@
 # YouPY
 YouPY is a Python script that downloads Youtube videos. It can output mp4 and mp3 files.
 
-This script has only been tested on Archlinux and Windows 11. However, it may work on other distros. Please feel free to give feedback or report bug.
+This script has only been tested on Linux. However, it may work on other distros. Please feel free to give feedback or report bug.
 
 The command's structure is as following:
 ```

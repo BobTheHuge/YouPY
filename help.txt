@@ -1,0 +1,19 @@
+[YouPY Manual]
+
+*- YouPY is a Youtube audio/video downloader written in Python.
+*- You can choose between available audio/video streams.
+
+@usage: youpy.py {mode} '{link}' '{output_folder}'
+
+@mode:
+	--mp3: download audio only
+	--mp4: download audio+video
+	
+@link:
+	Link to youtube video (should be single or double quoted)
+	
+@output_folder:
+	absolute path to the desired output folder 
+	(should be single or double quoted)
+	
+	Set to your OS $HOME by default

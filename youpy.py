@@ -1,8 +1,14 @@
 from pytube import YouTube
-from sys import argv
+from sys import argv, exit
+from pathlib import Path
 import os
 import ffmpeg
 
+if len(argv) <= 1:
+    with open('help.txt') as f:
+        content = f.read()
+        print(content)
+    exit(1)
 
 if argv[1] != "--mp3" and argv[1] != "--mp4":
     raise Exception(f"Unknown output format: '{argv[1]}' \n Should be '--mp4' or '--mp3'")
@@ -14,9 +20,9 @@ if argv[2][:32] != "https://www.youtube.com/watch?v=":
 yt = YouTube(argv[2])
 mp3_mode: bool = argv[1] == "--mp3"
 
-
+# get os $HOME 
 if len(argv) < 4:
-    output_dir = os.path.join(f"{os.environ['UserProfile']}", ("Videos", "Music")[mp3_mode])
+    output_dir = str(Path.home())
 else:
     output_dir = argv[3]
 
